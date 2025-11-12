@@ -1,4 +1,55 @@
-  @media screen and (max-width: 1600px) {
+       @media screen and (max-width: 1700px) {
+            .navbar {
+                grid-column: 1/11;
+                background-color: rgb(0, 0, 0);
+
+                ul li a {
+                    font-size: 1.5rem;
+                    padding: 40px;
+                }
+
+                ul {
+                    padding: 1.9rem;
+                }
+
+                #logo {
+                    font-size: 4rem;
+                }
+            }
+
+            .image-section {
+                grid-column: 1/5;
+                padding-top: 10px;
+                padding-left: 40px;
+
+                img {
+                    width: 110%;
+                }
+            }
+
+            .text-section {
+                grid-column: 5/11;
+                padding-top: 1rem;
+
+                li:nth-child(1) {
+                    font-size: 2rem;
+                    justify-content: center;
+                    margin-left: 40vh;
+                }
+
+                li:nth-child(2) {
+                    margin-left: 35vh;
+                    font-size: 2rem;
+                    padding: 50px;
+                }
+                li:nth-child(3) {
+                    margin-left: 40vh;
+                    font-size: 2rem;
+            }
+        }
+
+      
+ @media screen and (max-width: 1600px) {
             .navbar {
                 grid-column: 1/11;
                 background-color: rgb(0, 0, 0);
@@ -23,7 +74,7 @@
                 padding-left: 40px;
 
                 img {
-                    width: 60%;
+                    width:110%;
                 }
             }
 
@@ -67,7 +118,7 @@
                 padding-left: 40px;
 
                 img {
-                    width: 60%;
+                    width: 110%;
                 }
             }
 
@@ -90,7 +141,7 @@
             .navbar {
                 grid-column: 1/11;
                 background-color: rgb(0, 0, 0);
-
+            }
                 ul li a {
                     font-size: 1rem;
                     padding: 40px;
@@ -111,7 +162,7 @@
                 padding-left: 40px;
 
                 img {
-                    width: 60%;
+                    width: 110%;
                 }
             }
 
@@ -120,13 +171,17 @@
                 padding-top: 1rem;
 
                 li:nth-child(1) {
-                    font-size: 35px;
+                    font-size: 2rem;
+                    margin-right: 90vh;
                 }
 
                 li:nth-child(2) {
-                    font-size: 35px;
-                    padding: 50px;
+                    font-size: 2rem;
+                    margin-right: 90vh;
                 }
+
+                li:nth-child(3) {
+
             }
         }
 
@@ -146,6 +201,7 @@
 
                 #logo {
                     font-size: 4rem;
+                    margin-right: 80vh;
                 }
             }
 
@@ -155,16 +211,18 @@
                 padding-left: 40px;
 
                 img {
-                    width: 60%;
+                    width: 110%;
                 }
             }
 
             .text-section {
                 grid-column: 5/11;
                 padding-top: 1rem;
+                margin-left: -15vh;
 
                 li:nth-child(1) {
                     font-size: 40px;
+                    margin-right: 90vh;
                 }
 
                 li:nth-child(2) {
@@ -200,13 +258,14 @@
                 padding-left: 40px;
 
                 img {
-                    width: 60%;
+                    width: 110%;
                 }
             }
 
             .text-section {
                 grid-column: 5/11;
                 padding-top: 1rem;
+                margin-right: 10vh;
 
                 li:nth-child(1) {
                     font-size: 40px;
@@ -243,16 +302,17 @@
                 padding-top: 10px;
 
                 img {
-                    width: 50%;
+                    width: 30%;
                 }
             }
 
             .text-section {
                 grid-column: 2/11;
                 padding-top: 1rem;
+                margin-left: -25vh;
 
                 li:nth-child(1) {
-                    font-size: 3rem;
+                    font-size: 2rem;
                 }
 
                 li:nth-child(2) {
@@ -281,14 +341,15 @@
                 padding-top: 10px;
 
                 img {
-                    width: 60%;
+                    width: 30%;
                 }
             }
 
             .text-section {
                 grid-column: 1/11;
                 padding-top: 1rem;
-
+                margin-left: -30vh;
+            
                 li:nth-child(1) {
                     font-size: 40px;
                 }
@@ -299,16 +360,16 @@
             }
         }
 
-        @media screen and (max-width: 600px) {
-            .navbar {
+       @media screen and (max-width: 700px) {
+         .navbar {
                 padding: 30px;
                 ul {
                     display: none;
                 }
 
                 #logo {
-                    font-size: 30px;
-                    margin-left: 20px;
+                    font-size: 45px;
+                    margin-left: -240px;
                 }
 
                 #menu {
@@ -318,7 +379,53 @@
 
             .image-section {
                 grid-column: 1/11;
+                padding-top: 10px;
+
+                img {
+                    width:25%;
+                }
             }
+
+            .text-section {
+                grid-column: 1/11;
+                padding-top: 1rem;
+                margin-left: -40vh;
+            
+                li:nth-child(1) {
+                    font-size: 2rem;
+                }
+
+                li:nth-child(2) {
+                    font-size: 2rem;
+                }
+            }
+        }
+
+
+        @media screen and (max-width: 600px) {
+            .navbar {
+                padding: 30px;
+                ul {
+                    display: none;
+                }
+
+                #logo {
+                    font-size: 30px;
+                    margin-left: -20vh;
+                }
+
+                #menu {
+                    float: right;
+                }
+            }
+
+            .image-section {
+                grid-column: 1/11;
+                
+                img {
+                     margin-left: -10vh;
+                    width: 20%;
+                }
 
             .text-section {
                 grid-column: 1/11;
@@ -342,7 +449,7 @@
 
                 #logo {
                     font-size: 30px;
-                    margin-left: 20px;
+                     margin-left: -20vh;
                 }
 
                 #menu {
@@ -372,18 +479,16 @@
 
                 #logo {
                     font-size: 30px;
-                    margin-left: 20px;
+                    margin-left: -20vh;
                 }
 
-                .menu-bar {
-
-                    display: block;
-                    color: azure;
-                    float: left;
+                #menu {
+                    float: right;
                 }
             }
 
             .image-section {
+                 margin-left: -5vh;
                 grid-column: 1/11;
             }
 
@@ -391,29 +496,17 @@
                 grid-column: 1/11;
 
                 li:nth-child(1) {
-                    font-size: 2rem;
+                    font-size: 1.4rem;
                 }
 
                 li:nth-child(2) {
-                    font-size: 1.5rem;
+                    font-size: 1.3rem;
+                }
+
+                li:nth-child(3) {
+                    font-size: 1.4rem;
                 }
             }
-            #navLinks {
-    display: none;
-    flex-direction: column;
-    background: rgb(0, 0, 0);
-    position: fixed;      
-    top: 70px;            
-    padding: 15px;
-    border-radius: 8px;
-    gap: 15px;
-    width: 150px;         
-    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
-    z-index: 999;
-   
-  }
-
-#navLinks.show {
-    display: flex;
-  }
         }
+    }
+}

@@ -8,12 +8,16 @@
 }
 
 body {
-    background-color: #242F36;
+    background-color: #270f11;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat (10, 1fr);
+}
+
+.menu-bar {
+    display: none !important;
 }
 
 .navbar {
@@ -28,10 +32,6 @@ body {
          color: white;
     }
 
-    .menu-bar {
-    display: none;
-    color: rgb(255, 0, 0);
-}
     li :hover {
         color:#2146ff;
         background-color: rgb(0, 0, 0);
@@ -71,8 +71,7 @@ body {
     }
 
     .menu-bar {
-                display: block;
-                color: white;
+                display: none;
             }
 
 }
@@ -88,6 +87,10 @@ body {
          padding: 145px;
 
     }
+    .menu-bar {
+                display: block;
+                color: white;
+            }
 }
 
 .text-section {
@@ -104,9 +107,10 @@ body {
     li:nth-child(1) {
          color: white;
          font-family: 'inder', sans-serif;
-         font-size: 3rem;
+         font-size: 2rem;
          margin-bottom: 30px;
          justify-content: center;
+          margin-right: 20vh;
     }
 
     li:nth-child(2) {
@@ -114,16 +118,19 @@ body {
          color: white;
          font-family: 'Inder', sans-serif;
          font-size: 2rem;
-         background-color: black;
-         padding: 55px;
-         border-bottom-right-radius: 145px;
-         border-top-left-radius: 145px;
-         border-top-right-radius: 15px;
-         border-bottom-left-radius: 15px;
          justify-content: center;
     }
 
-}
+    li:nth-child(3) {
+         margin-right: 37%;
+         color: white;
+         font-family: 'Inder', sans-serif;
+         font-size: 2rem;
+         justify-content: center;
+          margin-left: 5vh;
+    }
+    }
+
 
 .footer {
      grid-column: 1/11;
@@ -138,48 +145,3 @@ body {
 
     }
 }
-       @media screen and (max-width: 1700px) {
-            .navbar {
-                grid-column: 1/11;
-                background-color: rgb(0, 0, 0);
-
-                ul li a {
-                    font-size: 1.5rem;
-                    padding: 40px;
-                }
-
-                ul {
-                    padding: 1.9rem;
-                }
-
-                #logo {
-                    font-size: 4rem;
-                }
-            }
-
-            .image-section {
-                grid-column: 1/5;
-                padding-top: 10px;
-                padding-left: 40px;
-
-                img {
-                    width: 60%;
-                }
-            }
-
-            .text-section {
-                grid-column: 5/11;
-                padding-top: 1rem;
-
-                li:nth-child(1) {
-                    font-size: 40px;
-                }
-
-                li:nth-child(2) {
-                    font-size: 2rem;
-                    padding: 50px;
-                }
-            }
-        }
-
-     

@@ -8,12 +8,16 @@
 }
 
 body {
-    background-color: #242F36;
+    background-color: #0d213f;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat (10, 1fr);
+}
+
+.menu-bar {
+    display: none !important;
 }
 
 .navbar {
@@ -28,10 +32,6 @@ body {
          color: white;
     }
 
-    .menu-bar {
-    display: none;
-    color: rgb(255, 0, 0);
-}
     li :hover {
         color:#2146ff;
         background-color: rgb(0, 0, 0);
@@ -70,9 +70,8 @@ body {
          padding-inline: 10rem;
     }
 
-    .menu-bar {
-                display: block;
-                color: white;
+    #menu {
+                display: none;
             }
 
 }
@@ -104,24 +103,26 @@ body {
     li:nth-child(1) {
          color: white;
          font-family: 'inder', sans-serif;
-         font-size: 3rem;
-         margin-bottom: 30px;
+         font-size: 2.2rem;
+         margin-bottom: 40px;
          justify-content: center;
     }
 
     li:nth-child(2) {
-         margin-right: 37%;
          color: white;
          font-family: 'Inder', sans-serif;
-         font-size: 2rem;
-         background-color: black;
-         padding: 55px;
-         border-bottom-right-radius: 145px;
-         border-top-left-radius: 145px;
-         border-top-right-radius: 15px;
-         border-bottom-left-radius: 15px;
-         justify-content: center;
+         font-size: 2.2rem;
+         margin-bottom: 30px;
+         margin-right: 70vh;
     }
+
+    li:nth-child(3) {
+        color: white;
+        font-family: 'Inder', sans-serif;
+        font-size: 2.2rem;
+        justify-content: center;
+        margin-right: 70vh;
+   }
 
 }
 

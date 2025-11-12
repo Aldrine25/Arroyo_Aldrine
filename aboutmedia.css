@@ -250,9 +250,53 @@
             .text-section {
                 grid-column: 2/11;
                 padding-top: 1rem;
+                 margin-right: 30vh;
 
                 li:nth-child(1) {
-                    font-size: 3rem;
+                    font-size: 2rem;
+                }
+
+                li:nth-child(2) {
+                    font-size: 2rem;
+                }
+            }
+        }
+
+         @media screen and (max-width: 900px) {
+            .navbar {
+                background-color: rgb(0, 0, 0);
+            
+
+                ul li a {
+                    font-size: 20px;
+                    padding: 25px;
+                }
+
+                ul {
+                    padding:15px
+                }
+
+                #logo {
+                     font-size: 3rem;
+                }
+            }
+
+            .image-section {
+                grid-column: 1/11;
+                padding-top: 10px;
+
+                img {
+                    width: 40%;
+                }
+            }
+
+            .text-section {
+                grid-column: 2/11;
+                padding-top: 1rem;
+                 margin-right: 35vh;
+
+                li:nth-child(1) {
+                    font-size: 2rem;
                 }
 
                 li:nth-child(2) {
@@ -287,14 +331,14 @@
 
             .text-section {
                 grid-column: 1/11;
-                padding-top: 1rem;
+                padding-top: 2rem;
 
                 li:nth-child(1) {
-                    font-size: 40px;
+                    font-size: 1.7rem;
                 }
 
                 li:nth-child(2) {
-                    font-size: 40px;
+                    font-size: 1.4rem;
                 }
             }
         }
@@ -318,7 +362,7 @@
 
             .image-section {
                 grid-column: 1/11;
-            }
+                
 
             .text-section {
                 grid-column: 1/11;
@@ -345,9 +389,8 @@
                     margin-left: 20px;
                 }
 
-                #menu {
-                    float: right;
-                }
+                .image-section {
+                 margin-left:30vh;
             }
 
 
@@ -372,19 +415,18 @@
 
                 #logo {
                     font-size: 30px;
-                    margin-left: 20px;
+                    margin-left: -20vh;
                 }
 
                 .menu-bar {
-
                     display: block;
-                    color: azure;
-                    float: left;
+                    float: right;
                 }
             }
 
             .image-section {
                 grid-column: 1/11;
+                margin-left: -30vh;
             }
 
             .text-section {
@@ -396,8 +438,7 @@
 
                 li:nth-child(2) {
                     font-size: 1.5rem;
-                }
-            }
+                 }
             #navLinks {
     display: none;
     flex-direction: column;
@@ -415,5 +456,8 @@
 
 #navLinks.show {
     display: flex;
+             }
+         }
+      }
+   }
   }
-        }
