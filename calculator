@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single-File JS Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+<body>
+    
+    <ul>Mark Ed S. Kadusale <br> <br>
+       Aldrine B. Arroyo <br> <br>
+       Amar A. Lubo <br> <br>
+       JunJun C. Encierto <br> <br>
+       Emmanuel A. Ambrona</ul>
+
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+
+        <div class="buttons">
+            <input type="button" value="C" onclick="clearDisplay()" class="clear">
+            <input type="button" value="(" onclick="appendToDisplay('(')">
+            <input type="button" value=")" onclick="appendToDisplay(')')">
+            <input type="button" value="÷" onclick="appendToDisplay('/')" class="operator">
+
+            <input type="button" value="7" onclick="appendToDisplay('7')">
+            <input type="button" value="8" onclick="appendToDisplay('8')">
+            <input type="button" value="9" onclick="appendToDisplay('9')">
+            <input type="button" value="x" onclick="appendToDisplay('*')" class="operator">
+
+            <input type="button" value="4" onclick="appendToDisplay('4')">
+            <input type="button" value="5" onclick="appendToDisplay('5')">
+            <input type="button" value="6" onclick="appendToDisplay('6')">
+            <input type="button" value="-" onclick="appendToDisplay('-')" class="operator">
+
+            <input type="button" value="1" onclick="appendToDisplay('1')">
+            <input type="button" value="2" onclick="appendToDisplay('2')">
+            <input type="button" value="3" onclick="appendToDisplay('3')">
+            <input type="button" value="+" onclick="appendToDisplay('+')" class="operator">
+
+            <input type="button" value="0" onclick="appendToDisplay('0')">
+            <input type="button" value="." onclick="appendToDisplay('.')">
+            <input type="button" value="=" onclick="calculateResult()" class="equal operator">
+            <input type="button" value="DEL" onclick="deleteLast()" class="clear"> 
+        </div>
+    </div>
+
+    <script>
+       
+        const display = document.getElementById('display');
+
+       
+        function appendToDisplay(value) {
+            
+            if (display.value === 'Error') {
+                display.value = ''; 
+            }
+            display.value += value;
+        }
+
+        function clearDisplay() {
+            display.value = '';
+        }
+
+      
+        function deleteLast() {
+            display.value = display.value.slice(0, -1);
+        }
+
+       
+        function calculateResult() {
+            try {
+             
+                let result = eval(display.value);
+                
+              
+                if (result === Infinity || isNaN(result)) {
+                    display.value = 'Error';
+                    return;
+                }
+
+                if (typeof result === 'number' && !Number.isInteger(result)) {
+                    display.value = parseFloat(result.toFixed(10));
+                } else {
+                    display.value = result;
+                }
+
+            } catch (error) {
+               
+                display.value = 'Error';
+            }
+        }
+    </script>
+</body>
+</html>
+
+        body {
+            background-image:url("blue_bubble_waves.jpg");
+            background-repeat:no-repeat ;
+            background-size:cover;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif; 
+            
+        }
+
+        .calculator {
+            background-image: url("bluestone1.jpg");
+             background-repeat:no-repeat ;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 30px rgb(4, 203, 229);
+            width: 300px; 
+            border: 3px solid rgba(42, 201, 249, 0.553);
+        }
+
+        #display {
+            width: 100%;
+            height: 60px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 2em;
+            text-align: right;
+            background-color: #f7f7f7;
+            box-sizing: border-box; 
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); 
+            gap: 10px;
+        }
+
+        .buttons input[type="button"] {
+            width: 100%;
+            height: 60px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.5em;
+            cursor: pointer;
+            background-color: #505050;
+            color: white;
+            transition: background-color 0.2s;
+        }
+
+        .buttons input[type="button"]:hover {
+            background-color: #686868;
+        }
+
+        .operator {
+            background-color: #00b3ff !important;
+        }
+
+        .operator:hover {
+            background-color: #08ea84 !important;
+        }
+
+        .clear {
+            grid-column: span 1;
+            background-color: #fac108 !important;
+            color: black !important;
+        }
+
+   ul{
+    display:flex;
+    font-size:20px;
+    font-weight: bold;
+    color:#f7f7f7;
+    background-color: #505050;
+    background-size: cover;
+    border-radius: 25px;
+    margin-right: 15px;
+    height: 25vh;
+    width: 26vh;
+ 
+   
+   }
